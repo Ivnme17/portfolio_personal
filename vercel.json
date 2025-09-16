@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "name": "portfolio-ivan-martinez",
   "buildCommand": "npm run build",
   "outputDirectory": "dist/portfolio_ivan/browser",
   "framework": "angular",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
