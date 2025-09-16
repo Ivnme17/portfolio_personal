@@ -1,0 +1,72 @@
+/* Social Media Section Styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  fill: currentColor;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* GitHub specific styling */
+.social-link[href*="github"]:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  background: rgba(248, 250, 252, 0.1);
+}
+
+/* LinkedIn specific styling */
+.social-link[href*="linkedin"]:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background: rgba(14, 165, 233, 0.1);
+}
+
+/* Responsive design for social links */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 1rem;
+  }
+  
+  .social-link {
+    padding: 0.75rem 1rem;
+    min-width: 120px;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
