@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-ivan-martinez.vercel.app/sitemap.xml
+Sitemap: https://portfolio-profesional-ivan-martinez.vercel.app/sitemap.xml
