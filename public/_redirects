@@ -1,0 +1,5 @@
+# Redirección para el dominio antiguo
+https://portfolio-ivan-martinez.vercel.app/* https://portfolio-profesional-ivan-martinez.vercel.app/:splat 301!
+
+# Redirección para el dominio sin www
+portfolio-ivan-martinez.vercel.app/* https://portfolio-profesional-ivan-martinez.vercel.app/:splat 301!
