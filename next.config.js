@@ -1,18 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'x-custom-header',
-            value: 'custom-value',
-          },
-        ],
-      },
-    ]
-  },
   async redirects() {
     return [
       {
@@ -28,9 +15,14 @@ const nextConfig = {
       },
     ]
   },
-  // Habilitar redirecciones en el lado del servidor
-  experimental: {
-    serverActions: true,
+  // Configuración para manejar correctamente las redirecciones
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ]
   },
 }
 
